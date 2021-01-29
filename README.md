@@ -7,7 +7,7 @@ A simple [AlexFlipnote API](https://api.alexflipnote.dev) wrapper for [Deno](htt
 ## Import
 
 ```ts
-import client from "https://deno.land/x/alexflipnote.ts/mod.ts";
+import client from "https://deno.land/x/alexflipnote/mod.ts";
 ```
 
 ## Tokens
@@ -88,7 +88,7 @@ _Note: These examples use the Deno Discord API library [Harmony](https://github.
 ### Cats Example
 
 ```js
-import client from "https://deno.land/x/alexflipnote.ts/mod.ts";
+import client from "https://deno.land/x/alexflipnote/mod.ts";
 const alexclient = new client("Your-API-Token-Here");
 
 let link = await alexclient.image.cats();
@@ -98,7 +98,7 @@ message.channel.send("", new MessageAttachment("filename.png", link));
 ### Colorify Example
 
 ```js
-import client from "https://deno.land/x/alexflipnote.ts/mod.ts";
+import client from "https://deno.land/x/alexflipnote/mod.ts";
 const alexclient = new client("Your-API-Token-Here");
 
 let url =
@@ -115,7 +115,7 @@ message.channel.send("", new MessageAttachment("filename.png", link));
 ### Color Example
 
 ```js
-import client from "https://deno.land/x/alexflipnote.ts/mod.ts";
+import client from "https://deno.land/x/alexflipnote/mod.ts";
 const alexclient = new client("Your-API-Token-Here");
 let body = await alexclient.others.color("00ffd9");
 message.channel.send(body);
